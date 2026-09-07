@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Sunny Beach Day</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="loadingOverlay">
+    <div class="text-center">
+      <div class="spinner-border" role="status" style="color:#264653;"></div>
+      <p class="mt-2 text-muted">Syncing your activity data…</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="assets/logo.png" alt="Sunny Beach logo" class="navbar-logo me-2">Sunny Beach
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <span class="navbar-text text-white me-3" id="userDisplay">Welcome, <span id="userName">User</span></span>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light btn-sm" id="logoutBtn">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar vh-100 p-3">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+            <li class="nav-item"><a class="nav-link text-danger" href="#" id="logoutLink">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+          <h2 id="greeting">Good Morning, User!</h2>
+        </div>
+
+        <div id="alertContainer" class="mb-3 d-none"></div>
+
+        <div class="row mb-4">
+          <div class="col-md-3 mb-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <h5 class="card-title text-muted" id="stat1-title"> Daily Steps</h5>
+                <h2 class="card-text fw-bold text-primary-custom" id="stat1-value">0</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <h5 class="card-title text-muted" id="stat2-title"> Calories Burned</h5>
+                <h2 class="card-text fw-bold text-success" id="stat2-value">0 kcal</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <h5 class="card-title text-muted" id="stat3-title"> Workouts</h5>
+                <h2 class="card-text fw-bold text-info" id="stat3-value">0</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card stat-card text-center">
+              <div class="card-body">
+                <h5 class="card-title text-muted" id="stat4-title"> Avg Heart Rate</h5>
+                <h2 class="card-text fw-bold text-warning" id="stat4-value">0 bpm</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <div class="card chart-card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Calories Burned by Activity Type</h6>
+                <div class="chart-container"><canvas id="chartCaloriesByType"></canvas></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card chart-card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Workout Status Distribution</h6>
+                <div class="chart-container"><canvas id="chartStatusDistribution"></canvas></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card chart-card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Weekly Steps Trend</h6>
+                <div class="chart-container"><canvas id="chartWeeklySteps"></canvas></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card chart-card h-100">
+              <div class="card-body">
+                <h6 class="card-title">Top 5 Activities by Calories Burned</h6>
+                <div class="chart-container"><canvas id="chartTopActivities"></canvas></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-bar p-3 mb-4">
+          <div class="row g-2 align-items-end">
+            <div class="col-md-3">
+              <label class="form-label small text-muted mb-1">Search</label>
+              <input type="text" id="searchInput" class="form-control" placeholder="Search by activity or type…">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label small text-muted mb-1">Activity Type</label>
+              <select id="typeFilter" class="form-select">
+                <option value="all">All Types</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label class="form-label small text-muted mb-1">Min Calories</label>
+              <input type="number" id="calMin" class="form-control" placeholder="min kcal">
+            </div>
+            <div class="col-md-2">
+              <label class="form-label small text-muted mb-1">Max Calories</label>
+              <input type="number" id="calMax" class="form-control" placeholder="max kcal">
+            </div>
+            <div class="col-md-3">
+              <div class="btn-group w-100" role="group" aria-label="Status filter">
+                <button class="btn btn-outline-secondary btn-status-filter active" data-status-filter="all">All</button>
+                <button class="btn btn-outline-secondary btn-status-filter" data-status-filter="completed">Done</button>
+                <button class="btn btn-outline-secondary btn-status-filter" data-status-filter="in-progress">Active</button>
+                <button class="btn btn-outline-secondary btn-status-filter" data-status-filter="missed">Missed</button>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col d-flex gap-2 justify-content-end">
+              <button id="clearFiltersBtn" class="btn btn-sm btn-outline-secondary"><i class="bi bi-x-lg"></i> Clear Filters</button>
+              <button id="exportCsvBtn" class="btn btn-sm btn-aqua"><i class="bi bi-file-earmark-spreadsheet"></i> Export to CSV</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Recent Activity</h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-striped table-hover align-middle">
+                <thead>
+                  <tr>
+                    <th>Date</th><th>Activity</th><th>Type</th>
+                    <th>Duration</th><th>Calories</th><th>Heart Rate</th><th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="activityTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert">
+      <div class="toast-header">
+        <i class="bi bi-bell-fill me-2" style="color:#2A9D8F;"></i>
+        <strong class="me-auto">Wearable Sync</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body" id="toastBody"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="js/DataManager.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
