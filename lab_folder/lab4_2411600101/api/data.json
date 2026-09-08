@@ -1,0 +1,962 @@
+[
+    {
+        "id": 106,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:17",
+        "duration": 51,
+        "caloriesBurned": 260,
+        "avgHeartRate": 100,
+        "status": "completed"
+    },
+    {
+        "id": 105,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:16",
+        "duration": 52,
+        "caloriesBurned": 140,
+        "avgHeartRate": 138,
+        "status": "completed"
+    },
+    {
+        "id": 104,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:15",
+        "duration": 22,
+        "caloriesBurned": 356,
+        "avgHeartRate": 96,
+        "status": "completed"
+    },
+    {
+        "id": 103,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:15",
+        "duration": 38,
+        "caloriesBurned": 216,
+        "avgHeartRate": 98,
+        "status": "completed"
+    },
+    {
+        "id": 102,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:14",
+        "duration": 22,
+        "caloriesBurned": 294,
+        "avgHeartRate": 132,
+        "status": "completed"
+    },
+    {
+        "id": 101,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:14",
+        "duration": 48,
+        "caloriesBurned": 379,
+        "avgHeartRate": 141,
+        "status": "completed"
+    },
+    {
+        "id": 100,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:14",
+        "duration": 53,
+        "caloriesBurned": 296,
+        "avgHeartRate": 106,
+        "status": "completed"
+    },
+    {
+        "id": 99,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:14",
+        "duration": 48,
+        "caloriesBurned": 142,
+        "avgHeartRate": 107,
+        "status": "completed"
+    },
+    {
+        "id": 98,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:14",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 97,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:14",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
+        "id": 96,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:13",
+        "duration": 42,
+        "caloriesBurned": 287,
+        "avgHeartRate": 102,
+        "status": "completed"
+    },
+    {
+        "id": 95,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:13",
+        "duration": 43,
+        "caloriesBurned": 299,
+        "avgHeartRate": 98,
+        "status": "completed"
+    },
+    {
+        "id": 94,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:13",
+        "duration": 36,
+        "caloriesBurned": 409,
+        "avgHeartRate": 145,
+        "status": "completed"
+    },
+    {
+        "id": 93,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:13",
+        "duration": 53,
+        "caloriesBurned": 255,
+        "avgHeartRate": 143,
+        "status": "completed"
+    },
+    {
+        "id": 92,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:13",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 91,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:13",
+        "duration": 33,
+        "caloriesBurned": 125,
+        "avgHeartRate": 97,
+        "status": "completed"
+    },
+    {
+        "id": 90,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:13",
+        "duration": 41,
+        "caloriesBurned": 96,
+        "avgHeartRate": 143,
+        "status": "completed"
+    },
+    {
+        "id": 89,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:11",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 88,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:11",
+        "duration": 29,
+        "caloriesBurned": 248,
+        "avgHeartRate": 145,
+        "status": "completed"
+    },
+    {
+        "id": 87,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:11",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
+        "id": 86,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:11",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
+        "id": 85,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:11",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 84,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:10",
+        "duration": 46,
+        "caloriesBurned": 251,
+        "avgHeartRate": 97,
+        "status": "completed"
+    },
+    {
+        "id": 83,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:10",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
+        "id": 82,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:10",
+        "duration": 54,
+        "caloriesBurned": 118,
+        "avgHeartRate": 154,
+        "status": "completed"
+    },
+    {
+        "id": 81,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:10",
+        "duration": 37,
+        "caloriesBurned": 122,
+        "avgHeartRate": 111,
+        "status": "completed"
+    },
+    {
+        "id": 80,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:10",
+        "duration": 45,
+        "caloriesBurned": 209,
+        "avgHeartRate": 159,
+        "status": "completed"
+    },
+    {
+        "id": 79,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:10",
+        "duration": 45,
+        "caloriesBurned": 271,
+        "avgHeartRate": 101,
+        "status": "completed"
+    },
+    {
+        "id": 78,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:09",
+        "duration": 31,
+        "caloriesBurned": 303,
+        "avgHeartRate": 106,
+        "status": "completed"
+    },
+    {
+        "id": 77,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:09",
+        "duration": 27,
+        "caloriesBurned": 247,
+        "avgHeartRate": 104,
+        "status": "completed"
+    },
+    {
+        "id": 76,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:09",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 75,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:09",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 74,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:09",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 73,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:09",
+        "duration": 15,
+        "caloriesBurned": 379,
+        "avgHeartRate": 147,
+        "status": "completed"
+    },
+    {
+        "id": 72,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:09",
+        "duration": 52,
+        "caloriesBurned": 212,
+        "avgHeartRate": 146,
+        "status": "completed"
+    },
+    {
+        "id": 71,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:08",
+        "duration": 40,
+        "caloriesBurned": 421,
+        "avgHeartRate": 112,
+        "status": "completed"
+    },
+    {
+        "id": 70,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:08",
+        "duration": 51,
+        "caloriesBurned": 118,
+        "avgHeartRate": 159,
+        "status": "completed"
+    },
+    {
+        "id": 69,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:08",
+        "duration": 15,
+        "caloriesBurned": 163,
+        "avgHeartRate": 122,
+        "status": "completed"
+    },
+    {
+        "id": 68,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:08",
+        "duration": 41,
+        "caloriesBurned": 158,
+        "avgHeartRate": 137,
+        "status": "completed"
+    },
+    {
+        "id": 67,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:08",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
+        "id": 66,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:08",
+        "duration": 25,
+        "caloriesBurned": 125,
+        "avgHeartRate": 159,
+        "status": "completed"
+    },
+    {
+        "id": 65,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:07",
+        "duration": 21,
+        "caloriesBurned": 272,
+        "avgHeartRate": 121,
+        "status": "completed"
+    },
+    {
+        "id": 64,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:07",
+        "duration": 42,
+        "caloriesBurned": 378,
+        "avgHeartRate": 136,
+        "status": "completed"
+    },
+    {
+        "id": 63,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:07",
+        "duration": 15,
+        "caloriesBurned": 386,
+        "avgHeartRate": 111,
+        "status": "completed"
+    },
+    {
+        "id": 62,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:07",
+        "duration": 15,
+        "caloriesBurned": 226,
+        "avgHeartRate": 141,
+        "status": "completed"
+    },
+    {
+        "id": 61,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:07",
+        "duration": 47,
+        "caloriesBurned": 375,
+        "avgHeartRate": 144,
+        "status": "completed"
+    },
+    {
+        "id": 60,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:07",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 59,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:07",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 58,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:06",
+        "duration": 26,
+        "caloriesBurned": 158,
+        "avgHeartRate": 104,
+        "status": "completed"
+    },
+    {
+        "id": 57,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:06",
+        "duration": 48,
+        "caloriesBurned": 297,
+        "avgHeartRate": 98,
+        "status": "completed"
+    },
+    {
+        "id": 56,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:06",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
+        "id": 55,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:06",
+        "duration": 15,
+        "caloriesBurned": 173,
+        "avgHeartRate": 147,
+        "status": "completed"
+    },
+    {
+        "id": 54,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:06",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
+        "id": 53,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:06",
+        "duration": 23,
+        "caloriesBurned": 396,
+        "avgHeartRate": 157,
+        "status": "completed"
+    },
+    {
+        "id": 52,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:05",
+        "duration": 23,
+        "caloriesBurned": 336,
+        "avgHeartRate": 103,
+        "status": "completed"
+    },
+    {
+        "id": 51,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:05",
+        "duration": 43,
+        "caloriesBurned": 193,
+        "avgHeartRate": 108,
+        "status": "completed"
+    },
+    {
+        "id": 50,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:05",
+        "duration": 35,
+        "caloriesBurned": 104,
+        "avgHeartRate": 118,
+        "status": "completed"
+    },
+    {
+        "id": 49,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:05",
+        "duration": 28,
+        "caloriesBurned": 343,
+        "avgHeartRate": 97,
+        "status": "completed"
+    },
+    {
+        "id": 48,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:05",
+        "duration": 25,
+        "caloriesBurned": 289,
+        "avgHeartRate": 96,
+        "status": "completed"
+    },
+    {
+        "id": 47,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:05",
+        "duration": 41,
+        "caloriesBurned": 368,
+        "avgHeartRate": 122,
+        "status": "completed"
+    },
+    {
+        "id": 46,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:04",
+        "duration": 25,
+        "caloriesBurned": 273,
+        "avgHeartRate": 136,
+        "status": "completed"
+    },
+    {
+        "id": 45,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:04",
+        "duration": 25,
+        "caloriesBurned": 383,
+        "avgHeartRate": 109,
+        "status": "completed"
+    },
+    {
+        "id": 44,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:04",
+        "duration": 50,
+        "caloriesBurned": 316,
+        "avgHeartRate": 122,
+        "status": "completed"
+    },
+    {
+        "id": 43,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:04",
+        "duration": 41,
+        "caloriesBurned": 189,
+        "avgHeartRate": 125,
+        "status": "completed"
+    },
+    {
+        "id": 42,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:03",
+        "duration": 16,
+        "caloriesBurned": 107,
+        "avgHeartRate": 100,
+        "status": "completed"
+    },
+    {
+        "id": 41,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:03",
+        "duration": 54,
+        "caloriesBurned": 426,
+        "avgHeartRate": 141,
+        "status": "completed"
+    },
+    {
+        "id": 40,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:03",
+        "duration": 34,
+        "caloriesBurned": 213,
+        "avgHeartRate": 130,
+        "status": "completed"
+    },
+    {
+        "id": 39,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:03",
+        "duration": 30,
+        "caloriesBurned": 416,
+        "avgHeartRate": 120,
+        "status": "completed"
+    },
+    {
+        "id": 38,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:03",
+        "duration": 15,
+        "caloriesBurned": 331,
+        "avgHeartRate": 144,
+        "status": "completed"
+    },
+    {
+        "id": 37,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:03",
+        "duration": 17,
+        "caloriesBurned": 375,
+        "avgHeartRate": 136,
+        "status": "completed"
+    },
+    {
+        "id": 36,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:02",
+        "duration": 32,
+        "caloriesBurned": 182,
+        "avgHeartRate": 134,
+        "status": "completed"
+    },
+    {
+        "id": 35,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:02",
+        "duration": 19,
+        "caloriesBurned": 243,
+        "avgHeartRate": 98,
+        "status": "completed"
+    },
+    {
+        "id": 34,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:02",
+        "duration": 23,
+        "caloriesBurned": 383,
+        "avgHeartRate": 128,
+        "status": "completed"
+    },
+    {
+        "id": 33,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:02",
+        "duration": 35,
+        "caloriesBurned": 187,
+        "avgHeartRate": 111,
+        "status": "completed"
+    },
+    {
+        "id": 32,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:02",
+        "duration": 36,
+        "caloriesBurned": 92,
+        "avgHeartRate": 133,
+        "status": "completed"
+    },
+    {
+        "id": 31,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:02",
+        "duration": 50,
+        "caloriesBurned": 379,
+        "avgHeartRate": 159,
+        "status": "completed"
+    },
+    {
+        "id": 30,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:01",
+        "duration": 51,
+        "caloriesBurned": 303,
+        "avgHeartRate": 137,
+        "status": "completed"
+    },
+    {
+        "id": 29,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:01",
+        "duration": 46,
+        "caloriesBurned": 219,
+        "avgHeartRate": 107,
+        "status": "completed"
+    },
+    {
+        "id": 28,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 10:01",
+        "duration": 17,
+        "caloriesBurned": 141,
+        "avgHeartRate": 97,
+        "status": "completed"
+    },
+    {
+        "id": 27,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:01",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 26,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:01",
+        "duration": 37,
+        "caloriesBurned": 323,
+        "avgHeartRate": 117,
+        "status": "completed"
+    },
+    {
+        "id": 25,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:01",
+        "duration": 48,
+        "caloriesBurned": 276,
+        "avgHeartRate": 137,
+        "status": "completed"
+    },
+    {
+        "id": 24,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:01",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "missed"
+    },
+    {
+        "id": 23,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:00",
+        "duration": 27,
+        "caloriesBurned": 237,
+        "avgHeartRate": 126,
+        "status": "completed"
+    },
+    {
+        "id": 22,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:00",
+        "duration": 37,
+        "caloriesBurned": 279,
+        "avgHeartRate": 113,
+        "status": "completed"
+    },
+    {
+        "id": 21,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:00",
+        "duration": 36,
+        "caloriesBurned": 211,
+        "avgHeartRate": 133,
+        "status": "completed"
+    },
+    {
+        "id": 20,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:00",
+        "duration": 17,
+        "caloriesBurned": 304,
+        "avgHeartRate": 147,
+        "status": "completed"
+    },
+    {
+        "id": 19,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:00",
+        "duration": 41,
+        "caloriesBurned": 419,
+        "avgHeartRate": 123,
+        "status": "completed"
+    },
+    {
+        "id": 18,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:00",
+        "duration": 34,
+        "caloriesBurned": 269,
+        "avgHeartRate": 117,
+        "status": "completed"
+    },
+    {
+        "id": 17,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 05:59",
+        "duration": 30,
+        "caloriesBurned": 407,
+        "avgHeartRate": 108,
+        "status": "completed"
+    },
+    {
+        "id": 16,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 05:59",
+        "duration": 23,
+        "caloriesBurned": 105,
+        "avgHeartRate": 124,
+        "status": "completed"
+    },
+    {
+        "id": 15,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 05:59",
+        "duration": 20,
+        "caloriesBurned": 146,
+        "avgHeartRate": 113,
+        "status": "completed"
+    },
+    {
+        "id": 14,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 05:59",
+        "duration": 45,
+        "caloriesBurned": 153,
+        "avgHeartRate": 157,
+        "status": "completed"
+    },
+    {
+        "id": 13,
+        "name": "Cycling Session - Wearable Sync",
+        "type": "Cycling",
+        "date": "2026-09-08 05:58",
+        "duration": 33,
+        "caloriesBurned": 202,
+        "avgHeartRate": 142,
+        "status": "completed"
+    },
+    {
+        "id": 12,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 05:58",
+        "duration": 24,
+        "caloriesBurned": 151,
+        "avgHeartRate": 96,
+        "status": "completed"
+    },
+    {
+        "id": 11,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 05:58",
+        "duration": 48,
+        "caloriesBurned": 194,
+        "avgHeartRate": 107,
+        "status": "completed"
+    }
+]
