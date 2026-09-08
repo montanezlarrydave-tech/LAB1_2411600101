@@ -24,14 +24,6 @@ const SAMPLE_ACTIVITIES = [
   { id: 5,  name: "HIIT Workout - 30 min",              type: "HIIT",      date: "2026-08-13 19:20", duration: 30, caloriesBurned: 380, avgHeartRate: 156, status: "completed" },
   { id: 6,  name: "Evening Cycling - 12 km",            type: "Cycling",   date: "2026-08-13 17:05", duration: 40, caloriesBurned: 350, avgHeartRate: 140, status: "completed" },
   { id: 7,  name: "Core Strength Circuit",              type: "Strength",  date: "2026-08-12 07:15", duration: 25, caloriesBurned: 210, avgHeartRate: 128, status: "completed" },
-  { id: 8,  name: "Missed Morning Run",                 type: "Running",   date: "2026-08-12 06:30", duration: 0,  caloriesBurned: 0,   avgHeartRate: 0,   status: "missed" },
-  { id: 9,  name: "Sunset Beach Walk",                  type: "Walking",   date: "2026-08-11 18:00", duration: 35, caloriesBurned: 150, avgHeartRate: 104, status: "completed" },
-  { id: 10, name: "Yoga Flow - Flexibility",            type: "Yoga",      date: "2026-08-11 06:45", duration: 30, caloriesBurned: 130, avgHeartRate: 98,  status: "completed" },
-  { id: 11, name: "HIIT Sprint Intervals",              type: "HIIT",      date: "2026-08-10 18:30", duration: 20, caloriesBurned: 290, avgHeartRate: 162, status: "in-progress" },
-  { id: 12, name: "Long Distance Run - 8 km",           type: "Running",   date: "2026-08-10 06:00", duration: 48, caloriesBurned: 520, avgHeartRate: 151, status: "completed" },
-  { id: 13, name: "Missed Cycling Session",             type: "Cycling",   date: "2026-08-09 17:00", duration: 0,  caloriesBurned: 0,   avgHeartRate: 0,   status: "missed" },
-  { id: 14, name: "Hydration Goal Reached (3L)",        type: "Hydration", date: "2026-08-09 13:00", duration: 0,  caloriesBurned: 0,   avgHeartRate: 0,   status: "info" },
-  { id: 15, name: "Strength Training - Leg Day",        type: "Strength",  date: "2026-08-08 18:15", duration: 50, caloriesBurned: 400, avgHeartRate: 138, status: "completed" },
 ];
 
 const WEEKLY_STEPS = [
@@ -44,13 +36,25 @@ const WEEKLY_STEPS = [
   { day: "Aug 16", steps: 8542 },
 ];
 
+const API_BASE_URL = "api/activities.php";
+
 async function initializeData() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      AppState.activities = JSON.parse(JSON.stringify(SAMPLE_ACTIVITIES));
-      resolve(AppState.activities);
-    }, 400); 
-  });
+  try {
+    const response = await fetch(API_BASE_URL);
+    if (!response.ok) throw new Error(`API responded with status ${response.status}`);
+    const data = await response.json();
+    if (!Array.isArray(data) || data.length === 0) throw new Error("API returned no data");
+    AppState.activities = data;
+    return AppState.activities;
+  } catch (err) {
+    console.warn("Falling back to local sample data (API unavailable):", err.message);
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        AppState.activities = JSON.parse(JSON.stringify(SAMPLE_ACTIVITIES));
+        resolve(AppState.activities);
+      }, 400);
+    });
+  }
 }
 
 function getActivities() {
@@ -202,6 +206,14 @@ function simulateNewActivity() {
   };
 
   AppState.activities.unshift(newActivity);
-  if (AppState.activities.length > 30) AppState.activities.pop(); 
+
+  if (AppState.activities.length > 7) AppState.activities.pop();
+
+  fetch(API_BASE_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(newActivity),
+  }).catch(() => {});
+
   return newActivity;
 }
