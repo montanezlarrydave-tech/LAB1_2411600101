@@ -191,30 +191,29 @@ function attachEventListeners() {
   document.getElementById('calMin').addEventListener('input', debounce(applyCalorieFilter, 300));
   document.getElementById('calMax').addEventListener('input', debounce(applyCalorieFilter, 300));
 
-  document.getElementById('searchInput').addEventListener('input', (e) => {
-    updateSearchResults(e.target.value);
-    renderActivityTable(applyFilters());
-  });
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  updateSearchResults(e.target.value);
+  renderActivityTable(applyFilters());
+});
 
-  document.getElementById('exportCsvBtn').addEventListener('click', () => {
-    const data = applyFilters();
-    const csv = exportToCSV(data);
-    downloadCSV(csv, `activity_log_${Date.now()}.csv`);
-    showToast(`Exported ${data.length} activity record(s) to CSV.`);
-  });
+document.getElementById('exportCsvBtn').addEventListener('click', () => {
+  const data = applyFilters();
+  const csv = exportToCSV(data);
+  downloadCSV(csv, `activity_log_${Date.now()}.csv`);
+  showToast(`Exported ${data.length} activity record(s) to CSV.`);
+});
 
-  document.getElementById('clearFiltersBtn').addEventListener('click', () => {
-    AppState.filters = { type: 'all', status: 'all', minCal: null, maxCal: null };
-    AppState.searchQuery = '';
-    document.getElementById('typeFilter').value = 'all';
-    document.getElementById('calMin').value = '';
-    document.getElementById('calMax').value = '';
-    document.getElementById('searchInput').value = '';
-    document.querySelectorAll('[data-status-filter]').forEach((b) => b.classList.remove('active'));
-    document.querySelector('[data-status-filter="all"]').classList.add('active');
-    refreshDashboard();
-  });
-}
+document.getElementById('clearFiltersBtn').addEventListener('click', () => {
+  AppState.filters = { type: 'all', status: 'all', minCal: null, maxCal: null };
+  AppState.searchQuery = '';
+  document.getElementById('typeFilter').value = 'all';
+  document.getElementById('calMin').value = '';
+  document.getElementById('calMax').value = '';
+  document.getElementById('searchInput').value = '';
+  document.querySelectorAll('[data-status-filter]').forEach((b) => b.classList.remove('active'));
+  document.querySelector('[data-status-filter="all"]').classList.add('active');
+  refreshDashboard();
+});
 
 function applyCalorieFilter() {
   const min = parseFloat(document.getElementById('calMin').value);
@@ -264,4 +263,5 @@ function setupLogout() {
 
   if (logoutBtn) logoutBtn.addEventListener('click', performLogout);
   if (logoutLink) logoutLink.addEventListener('click', performLogout);
+}
 }
