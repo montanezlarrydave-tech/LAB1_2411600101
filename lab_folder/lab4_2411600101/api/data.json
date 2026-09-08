@@ -1,5 +1,85 @@
 [
     {
+        "id": 114,
+        "name": "Yoga Session - Wearable Sync",
+        "type": "Yoga",
+        "date": "2026-09-08 10:19",
+        "duration": 38,
+        "caloriesBurned": 99,
+        "avgHeartRate": 104,
+        "status": "completed"
+    },
+    {
+        "id": 113,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:19",
+        "duration": 34,
+        "caloriesBurned": 196,
+        "avgHeartRate": 152,
+        "status": "completed"
+    },
+    {
+        "id": 112,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:19",
+        "duration": 26,
+        "caloriesBurned": 279,
+        "avgHeartRate": 126,
+        "status": "completed"
+    },
+    {
+        "id": 111,
+        "name": "Hydration Session - Wearable Sync",
+        "type": "Hydration",
+        "date": "2026-09-08 10:19",
+        "duration": 21,
+        "caloriesBurned": 313,
+        "avgHeartRate": 108,
+        "status": "completed"
+    },
+    {
+        "id": 110,
+        "name": "Strength Session - Wearable Sync",
+        "type": "Strength",
+        "date": "2026-09-08 10:18",
+        "duration": 36,
+        "caloriesBurned": 245,
+        "avgHeartRate": 148,
+        "status": "completed"
+    },
+    {
+        "id": 109,
+        "name": "Running Session - Wearable Sync",
+        "type": "Running",
+        "date": "2026-09-08 10:18",
+        "duration": 22,
+        "caloriesBurned": 122,
+        "avgHeartRate": 110,
+        "status": "completed"
+    },
+    {
+        "id": 108,
+        "name": "Walking Session - Wearable Sync",
+        "type": "Walking",
+        "date": "2026-09-08 10:18",
+        "duration": 46,
+        "caloriesBurned": 347,
+        "avgHeartRate": 141,
+        "status": "completed"
+    },
+    {
+        "id": 107,
+        "name": "HIIT Session - Wearable Sync",
+        "type": "HIIT",
+        "date": "2026-09-08 10:18",
+        "duration": 0,
+        "caloriesBurned": 0,
+        "avgHeartRate": 0,
+        "status": "in-progress"
+    },
+    {
         "id": 106,
         "name": "Walking Session - Wearable Sync",
         "type": "Walking",
